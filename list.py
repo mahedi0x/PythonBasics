@@ -112,6 +112,33 @@ print(unique)
 
 
 
+# Separate Data Types from a Mixed List
+arr = [2, 3, "Mahedi", 10.5, True, "Rafi", False, 5, 10, 5.5]
+int_arr = []
+float_arr = []
+str_arr = []
+bool_arr = []
+
+for value in arr:
+    if type(value) is int:
+        int_arr.append(value)
+
+    elif type(value) is float:
+        float_arr.append(value)
+
+    elif type(value) is str:
+        str_arr.append(value)
+
+    elif type(value) is bool:
+        bool_arr.append(value)
+
+print("int array =", int_arr)
+print("string array =",str_arr)
+print("float array =",float_arr)
+print("bool array =", bool_arr)
+
+
+
 
 
 
